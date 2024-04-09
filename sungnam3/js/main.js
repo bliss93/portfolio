@@ -10,7 +10,7 @@ $(document).ready(function(){
         $(this).addClass('active')
     })
     
-    const social_swiper = new Swiper('.social .swiper', { /* 팝업을 감싼는 요소의 class명 */
+    const social_swiper = new Swiper('.rental .swiper', { /* 팝업을 감싼는 요소의 class명 */
         slidesPerView: 'auto', /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
         spaceBetween: 20, /* 팝업과 팝업 사이 여백 */
         loop: true,
@@ -31,6 +31,12 @@ $(document).ready(function(){
         },
 
     });
+
+    
+    $('.interview .list ul li').on('mouseenter', function(){
+        $('.interview .list ul li').removeClass('active')
+        $(this).addClass('active')
+    })
     
 
     AOS.init({

@@ -197,12 +197,84 @@
     50% { transform:translate(-10px, 0) }
     100% { transform:translate(0, 0) }
 }
-.news {
-}
 .news h2 {
     font-size: 50px;
     font-weight: 700;
-    
+    margin-bottom: 32px;
+}
+.news ul li:first-child {
+    border-top: 1px solid #fff;;
+} 
+.news ul li {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+}
+.news ul li:last-child {
+    border-bottom: 1px solid #fff;
+}
+.news ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 100px;
+    font-size: 17px;
+    /* 공지사항에 행간을 높이값으로 주면
+    높이도 들어가고 글자도 높이에 중간에 배치됨 */
+    padding: 0 57px; /* 위아래:0, 좌우:57px */
+}
+.news ul li a em {
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    /* background 색상이 들어가는 만큼  */
+    padding: 9px 25px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.news ul li:hover a em {
+    background-color: #FEC619;
+}
+.news ul li a strong {
+    width: 1150px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+
+}
+.news ul li a span {
+    color: rgba(255, 255, 255, 0.5);
+}
+.news .inner {
+    position: relative; /* more 정렬의 기준 */
+}
+.news .more {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.news .more a {
+    width: 153px;
+    line-height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0 0 0 27px;
+    position: relative; /* after 정렬의 기준 */
+    transition: 0.2s;
+    border-radius: 50px;
+}
+.news .more a::after {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+    content: "";
+    background-image: url(../images/main/arrow_r.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    transition: 0.2s;
 }
 @media screen and (max-width:1640px){
 
@@ -220,7 +292,139 @@
 }
 
 .join {
-    height: 100px;
+    margin:120px 0 0 0;
+}
+
+
+.join {
+    margin: 120px 0 120px 0;
+    overflow: hidden;
+}
+.join .inner {
+    position: relative; /* more 정렬의 기준 */
+}
+.join .tit ul {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+}
+.join .tit ul li {
+    position: relative;
+}
+.join .tit ul li::before {
+    position: absolute;
+    right: -27px;
+    top: 11px;
+    width: 1px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "";
+}
+.join .tit ul li:last-child:before{
+    display: none;
+}
+.join .tit h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+}
+.join .list.perfom {
+    display: none;
+}
+.join .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.join .list ul li {
+    width: 500px;
+}
+.join .list ul li a {
+    display: block; 
+}
+.join .list ul li a span {
+    display: block; 
+    height: 728px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+    overflow: hidden; 
+    transition: 0.5s;
+}
+.join .list ul li a span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.join .list ul li a:hover span img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.join .list ul li a strong {
+    display: block;
+    margin: 32px 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.join .list ul li a h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    white-space: nowrap; /* 줄바꿈 금지 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.join .list ul li a:hover h3 {
+    color: #FEC619;
+}
+.join .list ul li a p {
+    /* 여러줄로 줄수를 제한하는 경우 */
+    line-height: 1.2;
+    height: 2.4em; /* 행간 * 줄수 */
+    overflow: hidden;
+}
+.join .more {
+    position: absolute; /* inner를 기준으로 */
+    right: 0;
+    top: 18px;
+}
+.join .more a {
+    width: 153px;
+    line-height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0 0 0 27px;
+    position: relative; /* after 정렬의 기준 */
+    transition: 0.2s;
+    border-radius: 50px;
+}
+.join .more a::after {
+    position: absolute; /* a를 기준으로 정렬 */
+    right: 15px;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+    content: "";
+    background-image: url(../images/main/arrow_r.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    transition: 0.2s;
+}
+.join .more a:hover {
+    background-color: #FEC619;
+    border: 1px solid #FEC619;
+    color: #1d1d1d;
+    font-weight: 700;
+}
+.join .more a:hover::after {
+    background-image: url(../images/main/arrow_r_b.svg);
+    animation-name: more; 
+    animation-duration: 2s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes more {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(-10px, 0) }
+    100% { transform:translate(0, 0) }
 }
 @media screen and (max-width:1640px){
    
@@ -237,10 +441,108 @@
 @media screen and (max-width:500px) {
   
 }
-
 .rental {
-    height: 100px;
+    margin: 120px 0 120px 0;
 }
+.rental h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+}
+.rental .swiper ul {
+    align-items: flex-start; /* li의 높이가 다를때 아래 정렬 */
+}
+.rental .photo {
+    position: relative;
+}
+.rental .photo img{
+    filter: grayscale(100%);
+}
+.rental .cnt {
+    left: 0;
+    bottom: 0;
+    background-color: #182932;
+    width: 1020px;
+    height: 110px;
+    padding: 30px 40px 0 40px;
+}
+.rental .cnt h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.rental .cnt .cnt2 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rental .list ul li.active a .photo {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+.rental .list ul li.active a .photo img {
+    filter: grayscale(0%); /* 칼라 - 숫자 0 단위 없음 */
+}
+.rental .list ul li.active a .cnt {
+    bottom: -86px;
+    width: 352px;
+    height: 191px;
+    display: block; /* flex 해제 */
+    padding: 30px 40px 0 40px;
+    background-color: #7A563C;
+    border-radius: 50px 0 50px 0;
+}
+.rental .list ul li:nth-child(2).active a .cnt {
+    border-radius: 0 50px 0 50px;
+}
+.rental .list ul li.active a .cnt p {
+    display: block;
+    margin: 10px 0;
+    /* 콘텐츠를 3줄로 제한 */
+    line-height: 1.2;
+    height: 3.6em; /* 행간 * 줄수 (단위는 em) */
+    overflow: hidden;
+}
+.rental .list ul li.active a .cnt span {
+    font-size: 15px;
+    line-height: 1.2;
+    width: auto;
+    height: auto;
+    background: none; /* 배경 삭제 */
+    display: block; /* width:100% */
+    text-align: right;
+    position: relative; /* before 정렬의 기준 */
+}
+.rental .list ul li.active a .cnt span::before {
+    position: absolute; /* span을 기준으로 정렬 */
+    left: 0;
+    top: 7px;
+    width: calc(100% - 6em);
+    /* 6em 이라는 단위는 글자 6글자의 넓이 
+    반응형에서 글자의 크기가 변경되면 
+    px로 한경우 계속 글자가 바뀔때마다 
+    넓이를 변경해야함 
+    하지만 em이라는 단위를 사용하면 
+    글자크기가 줄어도 변경을 안해도됨. 
+    글자의 크기에 상대크기로 글자수의 넓이를 줌 */
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    content: "";
+}
+
+
 @media screen and (max-width:1640px){
     
 }
