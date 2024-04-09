@@ -488,7 +488,7 @@
 }
 swiper-slide swiper-slide-active
 /*active*/
-.rental .swiper-wrapper {
+.rental .swiper {
     position: relative;
 }
 .rental .swiper ul li.swiper-slide-active .photo {
