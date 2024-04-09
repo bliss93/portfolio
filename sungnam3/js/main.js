@@ -18,25 +18,24 @@ $(document).ready(function(){
         breakpoints: {
             
             1640: {
-                slidesPerView: 3, /* 사이즈제한 */
-                spaceBetween: 40,
+                slidesPerView: 'auto', /* 사이즈제한 */
+                spaceBetween: 20,
             },
             
         },
         slideToClickedSlide : true,
-
-        navigation: {  /* 이전, 다음 버튼 */
-        nextEl: '.social .next',  /* 다음 버튼의 클래스명 */
-        prevEl: '.social .prev',  
-        },
+        
+        // autoplay: {  /* 팝업 자동 실행 */
+        // delay: 3000,
+        // disableOnInteraction: true,
+        // },
 
     });
 
+ 
+
+   
     
-    $('.interview .list ul li').on('mouseenter', function(){
-        $('.interview .list ul li').removeClass('active')
-        $(this).addClass('active')
-    })
     
 
     AOS.init({
