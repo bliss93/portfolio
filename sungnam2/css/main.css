@@ -1,0 +1,942 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+/*
+    파일명 : main.css
+    작성자 : 윤서하
+    작성일 : 24.03.28
+    설  명 : 메인페이지에만 들어가는 스타일을 저장 (header, footer 빼고 전부 다)
+*/
+/* 
+.visual .video_container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: 0;
+}
+.visual video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} */
+
+.visual video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} 
+
+@media screen and (max-width:1640px){
+  
+}
+@media screen and (max-width:1320px){
+   
+}
+
+@media screen and (max-width:1024px){
+    
+}
+@media screen and (max-width:768px){
+   
+}
+@media screen and (max-width:500px){
+   
+}
+
+
+.show {
+    margin: 120px 0 120px 0;
+    overflow: hidden;
+}
+.show .inner {
+    position: relative; /* more 정렬의 기준 */
+}
+.show .tit ul {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+}
+.show .tit ul li {
+    position: relative;
+}
+.show .tit ul li::before {
+    position: absolute;
+    right: -27px;
+    top: 11px;
+    width: 1px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "";
+}
+.show .tit ul li:last-child:before{
+    display: none;
+}
+.show .tit h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+}
+.show .tit h2:hover {
+    color: #FEC619;
+    text-shadow: 0 0 2.5px, 0 0 .5em; 
+}
+.show .list.perfom {
+    display: none;
+}
+.show .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.show .list ul li {
+    width: 500px;
+}
+.show .list ul li a {
+    display: block; 
+}
+.show .list ul li a span {
+    display: block; 
+    height: 500px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+    overflow: hidden; 
+    transition: 0.5s;
+}
+.show .list ul li a span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.show .list ul li a:hover span {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+.show .list ul li a:hover span img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.show .list ul li a strong {
+    display: block;
+    margin: 32px 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.show .list ul li a h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    white-space: nowrap; /* 줄바꿈 금지 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.show .list ul li a:hover h3 {
+    color: #FEC619;
+    text-shadow: 0 0 1px, 0 0 .3em; 
+}
+.show .list ul li a p {
+    /* 여러줄로 줄수를 제한하는 경우 */
+    line-height: 1.2;
+    height: 2.4em; /* 행간 * 줄수 */
+    overflow: hidden;
+}
+.show .more {
+    position: absolute; /* inner를 기준으로 */
+    right: 0;
+    top: 18px;
+}
+.show .more a {
+    width: 153px;
+    line-height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0 0 0 27px;
+    position: relative; /* after 정렬의 기준 */
+    transition: 0.2s;
+    border-radius: 50px;
+}
+.show .more a::after {
+    position: absolute; /* a를 기준으로 정렬 */
+    right: 15px;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+    content: "";
+    background-image: url(../images/main/arrow_r.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    transition: 0.2s;
+}
+.show .more a:hover {
+    background-color: #FEC619;
+    border: 1px solid #FEC619;
+    color: #1d1d1d;
+    font-weight: 700;
+}
+.show .more a:hover::after {
+    background-image: url(../images/main/arrow_r_b.svg);
+    animation-name: more; 
+    animation-duration: 2s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes more {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(-10px, 0) }
+    100% { transform:translate(0, 0) }
+}
+
+@media screen and (max-width:1640px){
+
+}
+@media screen and (max-width:1320px){
+
+}
+
+@media screen and (max-width:1024px){
+
+
+}
+@media screen and (max-width:768px){
+
+}
+.brand .wrapper {
+    display: flex;
+}
+.brand::before {
+    display: block;
+    border-top: 1px solid rgba(61, 61, 61, 0.5);
+    width: 1750px;
+    content: "";
+}
+.brand::after {
+    display: block;
+    border-bottom: 1px solid rgba(61, 61, 61, 0.5);
+    width: 1900px;
+    content: "";
+    margin: 0 0 0 150px;
+}
+.brand .photo {
+    width: 41rem;
+    height: 100%;
+    padding: 95px 0 95px 0;
+}
+.brand .photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.brand .cnt {
+    display: block;
+}
+.brand .cnt > strong{
+    display: block;
+    font-size: 1.4rem;
+    font-family: 'KoPub Batang', serif;
+    font-weight: 700;
+    margin: 243px 0 50px 60px;
+    transform: skew(-0.1deg);
+}
+.brand .cnt > h2 {
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'KoPub Batang', serif;
+    font-weight: 400;
+    margin: 0 0 100px 60px;
+    white-space: nowrap;
+}
+.brand .cnt > p {
+    display: block;
+    line-height: 2;
+    margin: 0 0 0 105px;
+    font-size: 1rem;
+}
+.brand .cnt .more {
+    margin: 84px 0 0 105px;
+}
+.brand .cnt .more ul {
+    display: flex;
+}
+.brand .cnt .more ul li span {
+    display: block;
+    font-size: 15px;
+}
+.brand .cnt .more ul li strong {
+    display: block;
+    line-height: 40px;
+}
+.brand .cnt .more ul li a {
+    width: 118px;
+    height: 85px;
+    margin-left: 10px;
+}
+.brand .cnt .more ul li a img {
+    width: 118px;
+    height: 100%
+}
+ 
+@media screen and (max-width:1640px){
+    .brand .wrapper {
+        align-items: center;
+    }
+    .brand::before {
+        width: 1550px;
+        margin: 0 80px 0 0;
+    }
+    .brand::after {
+        margin: 0 0 0 40px;
+    }
+    .brand .photo {
+        padding: 80px 0 80px 20px;
+    }
+    .brand .cnt > strong{
+        margin: 80px 0 50px 30px;
+    }
+    .brand .cnt > h2 {
+        margin: 0 0 60px 30px;
+    }
+    .brand .cnt > p {
+        margin: 0 0 0 50px;
+        font-size: 1rem;
+    }
+    .brand .cnt .more {
+        margin: 50px 0 0 50px;
+    }
+}
+@media screen and (max-width:1320px) {
+    .brand::before {
+        width: 1200px;
+    }
+    .brand::after {
+        margin: 0 0 0 40px;
+    }
+    .brand .photo {
+        padding: 70px 0 70px 20px;
+    }
+    .brand .cnt > strong{
+        margin: 80px 0 50px 20px;
+    }
+    .brand .cnt > h2 {
+        margin: 0 0 50px 20px;
+    }
+    .brand .cnt > p {
+        margin: 0 0 0 40px;
+    }
+    .brand .cnt .more {
+        margin: 40px 0 0 40px;
+    }
+}
+@media screen and (max-width:1024px){
+    .brand::before {
+        width: 1000px;
+        margin: 0 20px 0 0;
+    }
+    .brand::after {
+        margin: 0 0 0 40px;
+    }
+    .brand .photo {
+        padding: 50px 0 50px 20px;
+    }
+    .brand .cnt > strong{
+        margin: 30px 0 20px 20px;
+    }
+    .brand .cnt > h2 {
+        margin: 0 0 20px 20px;
+    }
+    .brand .cnt > p {
+        margin: 0 0 0 40px;
+    }
+    .brand .cnt .more {
+        margin: 20px 0 0 40px;
+    }
+    .brand .cnt .more ul li a img {
+        width: 75px;
+        height: 100%
+    }
+}
+@media screen and (max-width:768px){
+    .brand .wrapper {
+        display: block;
+        position: relative;
+    }
+    .brand::before {
+        width: 728px;
+        margin: 0 40px 0 0;
+    }
+    .brand::after {
+        margin: 0 0 0 40px;
+    }
+    .brand .photo {
+        width: 100%;
+        height: 100%;
+        padding: 40px 20px 20px 20px;
+    }
+    .brand .cnt > strong{
+        margin: 20px 0 20px 20px;
+        flex-wrap: wrap;
+    }
+    .brand .cnt > h2 {
+        margin: 0 0 20px 20px;
+        flex-wrap: wrap;
+        white-space: unset;
+    }
+    .brand .cnt > p {
+        margin: 0 0 0 20px;
+        flex-wrap: wrap;
+    }
+    .brand .cnt .more {
+        margin: 20px 0 40px 20px;
+    }
+    .brand .cnt .more ul li a img {
+        width: 75px;
+        height: 100%
+    }
+}
+@media screen and (max-width:500px) {
+    .brand::before {
+        width: 470px;
+        margin: 0 40px 0 0;
+    }
+    .brand::after {
+        margin: 0 0 0 25px;
+    }
+    .brand .photo {
+        padding: 40px 10px 20px 10px;
+    }
+    .brand .cnt > strong{
+        margin: 20px 0 20px 10px;
+        flex-wrap: wrap;
+    }
+    .brand .cnt > h2 {
+        margin: 0 0 20px 10px;
+        flex-wrap: wrap;
+        white-space: unset;
+    }
+    .brand .cnt > p {
+        margin: 0 0 0 10px;
+        flex-wrap: wrap;
+    }
+    .brand .cnt .more {
+        margin: 20px 0 40px 10px;
+    }
+}
+
+.social {
+    margin: 130px 0 130px 0;
+}
+.social > .wrapper {
+    position: relative;
+}
+.social h2 {
+    font-size: 2rem;
+    font-family: 'KoPub Batang', serif;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+.social p {
+    color: #3D3D3D;
+    text-align: center;
+}
+.social p br {
+    display: none;
+}
+.social .sns ul {
+    display: flex;
+}
+.social .list .swiper {
+    width: 1413px;
+    margin-top: 80px;
+}
+.social .list ul li {
+    width: 445px;
+}
+.social .list ul li a {
+    display: block;
+}
+.social .list ul li a .tag {
+    margin: 29px 0 0 0;
+    text-align: left;
+    transition: 0.5s;
+}
+.social .list ul li a .tag span {
+    padding-right: 25px;
+}
+.social .ctrl_btn button {
+    position: absolute;
+    top: calc(50% + 37.5px);
+    width: 75px;
+    height: 75px;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.social .ctrl_btn button.prev {
+    background-image: url(../images/main/화살표_왼쪽2.svg);
+    left: 0;
+}
+.social .ctrl_btn button.next {
+    background-image: url(../images/main/화살표_오른쪽2.svg);
+    right: 0;
+}
+
+ 
+@media screen and (max-width:1640px){
+    .social {
+        margin: 100px 0 100px 0;
+    }
+    .social h2 {
+        margin: 0 0 28px 0;
+    }
+    .social .list .swiper {
+        margin-top: 80px;
+    }
+    .social .list ul {
+        width: 1600px;
+    }
+    .social .list ul li {
+        width: 400px;
+        height: 100%;
+    }
+    .social .list ul li a img {
+        width: 100%;
+        height: 100%;
+    }
+    .social .list ul li a .tag {
+        margin: 20px 0 0 0;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .social .list ul li a .tag span {
+        padding-right: 22px;
+    }
+    .social .ctrl_btn button {
+        display: none;
+    }
+}
+@media screen and (max-width:1320px){
+    .social {
+        margin: 90px 0 90px 0;
+    }
+    .social h2 {
+        margin: 0 0 25px 0;
+    }
+    .social .list .swiper {
+        margin-top: 70px;
+    }
+    .social .list ul {
+        width: 1160px;
+    }
+    .social .list ul li {
+        width: 360px;
+        height: 100%;
+    }
+    .social .list ul li a .tag {
+        margin: 20px 0 0 0;
+        font-size: 17px;
+    }
+    .social .list ul li a .tag span {
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width:1024px){
+    .social {
+        margin: 80px 0 80px 0;
+    }
+    .social h2 {
+        margin: 0 0 24px 0;
+    }
+    .social .list .swiper {
+        margin-top: 60px;
+    }
+    .social .list ul {
+        width: 980px;
+    }
+    .social .list ul li {
+        width: 300px;
+        height: 100%;
+    }
+    .social .list ul li a .tag {
+        margin: 18px 0 0 0;
+        font-size: 16px;
+    }
+    .social .list ul li a .tag span {
+        padding-right: 18px;
+    }
+}
+@media screen and (max-width:768px){
+    .social {
+        margin: 70px 0 80px 0;
+    }
+    .social h2 {
+        margin: 0 0 22px 0;
+    }
+    .social .list .swiper {
+        margin-top: 50px;
+    }
+    .social .list ul {
+        width: 790px;
+    }
+    .social .list ul li {
+        width: 250px;
+        height: 100%;
+    }
+    .social .list ul li a .tag {
+        margin: 16px 0 0 0;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .social .list ul li a .tag span {
+        padding-right: 16px;
+    }
+}
+
+aside.quick {
+    position: fixed;
+    right: 25px;
+    top: 124px;
+    z-index: 100;
+}
+aside.quick ul li {
+    margin-top: 32px;
+}
+aside.quick ul li a {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: #97644D;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 50px;
+    text-align: center;
+    position: relative; /* before */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1)
+}
+aside.quick ul li a::before {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 100%;
+    height: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+aside.quick ul li.youtube a::before {
+    background-image: url(../images/common/aside_youtube.png)
+}
+aside.quick ul li.foundation a::before {
+    background-image: url(../images/common/aside_found.svg)
+}
+aside.quick ul li.call a::before {
+    background-image: url(../images/common/aside_call.svg)
+}
+
+aside.top {
+    position: relative;
+    cursor: pointer;
+}
+aside.top button {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: -120px;
+    display: block;
+    color: #3d3d3d;
+    text-align: center;
+    width: 69px;
+
+}
+aside.top button img {
+    width: 100%;
+    height: 100%;
+}
+aside.top button span {
+    line-height: 35px;
+}
+@media screen and (max-width:1640px){
+    aside.quick {
+        top: 100px;
+    }
+    aside.quick ul li {
+        margin-top: 25px;
+    }
+    aside.quick ul li a {
+        width: 88px;
+        height: 88px;
+        padding-top: 50px;
+    }
+    aside.quick ul li a::before {
+        top: 16px;
+        width: 100%;
+    }
+        
+    aside.top button {
+        right: 15px;
+        top: -80px;
+        width: 50px;
+    }
+    aside.top button span {
+        line-height: 30px;
+    }
+}
+@media screen and (max-width:1024px){
+    aside.quick {
+        top: 50px;
+    }
+    aside.quick ul li {
+        margin-top: 20px;
+    }  
+    aside.top button {
+        right: 15px;
+        top: -65px;
+        width: 40px;
+    }
+    aside.top button span {
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width:768px){
+    aside.quick {
+        display: none;
+    }
+    aside.top button {
+        right: 15px;
+        top: -60px;
+        width: 30px;
+    }
+    aside.top button span {
+        line-height: 20px;
+    }
+}
+footer {
+    background-color: #302F2D;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 51px;
+    font-size: 1rem;
+}
+footer .f_cnt{
+    display: block;
+}
+footer .f_logo {
+    padding: 0 61px 0 31px;
+}
+footer .f_logo img {
+    width: 115px;
+}
+footer .f_link {
+    position: absolute;
+    bottom: 51px;
+    right: 40px;
+}
+footer .f_link ul {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 12px 12px 15px 12px;
+}
+footer .f_link ul li {
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+}
+footer .f_link ul li a {
+    width: 17px;
+    height: 17px;
+}
+footer .f_link ul li a img {
+    height: 100%;
+    width: 100%;
+}
+footer .f_nav {
+    margin: 40px 0;
+}
+footer .f_nav ul {
+    display: flex;
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+}
+footer .f_nav ul li {
+    margin: 0 42px 10px 0;
+    position: relative; /* after 정렬의 기준 */
+}
+footer .f_nav ul li.person {
+    font-weight: 700;
+}
+footer .f_nav ul li::after {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+    width: 1px;
+    height: 13px;
+    background-color: #d6d1cc;
+    content: "";
+}
+footer .f_nav ul li:last-child {
+    margin-right: 0;
+}
+footer .f_nav ul li:last-child::after {
+    display: none;
+}
+footer .f_info{
+    margin: 52px 0 34px 0;
+}
+footer .f_info span {
+    display: inline-block;
+    margin: 0 30px 10px 0;
+}
+footer .f_info br.info {
+    display: none;
+}
+footer .copyright {
+    margin: 40px 0 80px 0;
+    padding: 20px 0;
+}
+footer .f_tel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 50px 40px 50px 0;
+}
+footer .f_tel span {
+    display: block;
+    text-align: right;
+    margin-bottom: 26px;
+}
+footer .f_tel span.tell {
+    font-size: 2.25rem;
+    color: #FFCC00;
+    margin-top: 16px ;
+}
+footer .f_tel span:last-child {
+    margin-bottom:0;
+}
+@media screen and (max-width:1640px){
+    footer {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding: 51px 0 220px 0;
+    }
+    footer .f_cnt{
+        display: block;
+    }
+    footer .f_logo img {
+        width: 115px;
+    }
+    footer .f_link {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        display: block;
+        left: calc(50% - 90px);
+        top: 22px;
+    }
+    footer .f_nav {
+        display: block;
+        padding: 80px 0 36px 0;
+        margin: auto;
+        margin-left:10%;
+    }
+    footer .f_info{
+        display: block;
+        text-align: left;
+        margin: 0 0 0 10%;;
+    }
+    footer .copyright {
+        margin: 38px 0 38px 10%;
+        padding: 0;
+        text-align: left;
+    }
+    footer .f_tel {
+        left: 10%;
+        bottom: 50px;
+        top: auto;
+        right: auto;
+        margin: 0;
+        text-align: left;
+    }
+    footer .f_tel span {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    footer .f_tel span.tell {
+        margin-top: 0;
+    }
+    footer .f_tel span:last-child {
+        margin-bottom:0;
+    }
+}
+
+@media screen and (max-width:1320px){
+    footer {
+        padding: 51px 0 170px 0;
+    }
+    footer .f_nav {
+        padding: 75px 0 36px 0;
+    }
+    footer .f_nav ul li {
+        margin: 0 40px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -21px;
+        top: 4px;
+        height: 11px;
+    }
+    footer .f_tel {
+        bottom: 80px;
+    }
+}
+@media screen and (max-width:1024px){
+    footer {
+        padding: 51px 0 170px 0;
+    }
+    footer .f_nav {
+        padding: 65px 0 36px 0;
+    }
+    footer .f_nav ul li {
+        margin: 0 35px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -18px;
+        top: 3px;
+        height: 11px;
+    }
+    footer .f_tel {
+        bottom: 50px;
+    }
+}
+@media screen and (max-width:768px) {
+    footer .f_nav ul li {
+        margin: 0 30px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -16px;
+        top: 3px;
+        height: 9px;
+    }
+}
+@media screen and (max-width:500px) {
+    footer .f_nav ul li {
+        margin: 0 25px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -16px;
+        top: 3px;
+        height: 9px;
+    }
+}
+  

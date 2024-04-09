@@ -1,0 +1,614 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+/*
+    파일명 : main.css
+    작성자 : 윤서하
+    작성일 : 24.03.28
+    설  명 : 메인페이지에만 들어가는 스타일을 저장 (header, footer 빼고 전부 다)
+*/
+/* 
+.visual .video_container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: 0;
+}
+.visual video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} */
+
+.visual video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} 
+
+@media screen and (max-width:1640px){
+  
+}
+@media screen and (max-width:1320px){
+   
+}
+
+@media screen and (max-width:1024px){
+    
+}
+@media screen and (max-width:768px){
+   
+}
+@media screen and (max-width:500px){
+   
+}
+
+
+.show .slogan {
+    position: absolute;
+    left: 20px;
+    top: -60px;
+    z-index: 10;
+    mix-blend-mode: difference;
+    animation:slogan_rotate; 
+    animation-duration:10s; 
+    animation-timing-function:linear; 
+    animation-iteration-count:infinite;
+}
+@keyframes slogan_rotate {
+    0% { transform:rotate(0) }
+    100% { transform:rotate(-360deg) }
+}
+.show {
+    margin: 120px 0 120px 0;
+    height: 750px;
+}
+.show .wrapper {
+    position: relative; /* more 정렬의 기준 */
+}
+.show h2 {
+    font-size: 0;
+    line-height: 0;
+}
+.show .list ul{
+    display: flex;
+}
+.show .list > ul > li > button {
+    padding: 12px 37px;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+}
+.show .list > ul > li.active > button {
+    color: #FEC619;
+    text-shadow: 0 0 2.5px, 0 0 .5em; 
+}
+.show .list > ul > li > button::before {
+    position: absolute;
+    right: -2px;
+    top: 22px;
+    width: 1px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "";
+}
+.show .list > ul > li > button.last:before {
+    display: none;
+}
+.show .list > ul > li .detail {
+    position: absolute;
+    left: 0;
+    top: 100px; /* tab버튼에서 부터의 측정 */
+    width: 100%;
+    display: none;
+}
+.show .list > ul > li.active .detail {
+    display: block;
+}
+.show .list > ul > li .detail ul {
+    display: flex;
+    justify-content: space-between;
+}
+.show .list > ul > li .detail ul li {
+    width: 500px;
+}
+.show .list > ul > li .detail ul li a {
+    display: block;
+}
+.show .list > ul > li .detail ul li a span {
+    display: block;
+    width: 500px;
+    height: 500px;
+    overflow: hidden; 
+}
+.show .list > ul > li .detail ul li a span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.show .list > ul > li .detail ul li a:hover span img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.show .list > ul > li .detail ul li a strong {
+    display: block;
+    margin: 32px 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.show .list > ul > li .detail ul li a h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    white-space: nowrap; /* 줄바꿈 금지 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.show .list > ul > li .detail ul li a:hover h3 {
+    color: #FEC619;
+}
+.show .list > ul > li .detail .more {
+    position: absolute; 
+    right: 0;
+    top: -74px;
+}
+.show .list > ul > li .detail .more a {
+    width: 153px;
+    line-height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0 0 0 27px;
+    position: relative; /* after 정렬의 기준 */
+    transition: 0.2s;
+    border-radius: 50px;
+}
+.show .list > ul > li .detail .more a::after {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+    content: "";
+    background-image: url(../images/main/arrow_r.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    transition: 0.2s;
+}
+.show .list > ul > li .detail .more a:hover {
+    background-color: #FEC619;
+    border: 1px solid #FEC619;
+    color: #1d1d1d;
+    font-weight: 700;
+}
+.show .list > ul > li .detail .more a:hover::after {
+    background-image: url(../images/main/arrow_r_b.svg);
+    animation-name: more; 
+    animation-duration: 2s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes more {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(-10px, 0) }
+    100% { transform:translate(0, 0) }
+}
+.news {
+}
+.news h2 {
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+@media screen and (max-width:1640px){
+
+}
+@media screen and (max-width:1320px){
+
+}
+
+@media screen and (max-width:1024px){
+
+
+}
+@media screen and (max-width:768px){
+
+}
+
+.join {
+    height: 100px;
+}
+@media screen and (max-width:1640px){
+   
+}
+@media screen and (max-width:1320px) {
+  
+}
+@media screen and (max-width:1024px){
+   
+}
+@media screen and (max-width:768px){
+ 
+}
+@media screen and (max-width:500px) {
+  
+}
+
+.rental {
+    height: 100px;
+}
+@media screen and (max-width:1640px){
+    
+}
+@media screen and (max-width:1320px){
+   
+}
+@media screen and (max-width:1024px){
+   
+}
+@media screen and (max-width:768px){
+    
+}
+.sponsor {
+    height: 100px;
+}
+@media screen and (max-width:1640px){
+    
+}
+@media screen and (max-width:1320px){
+   
+}
+@media screen and (max-width:1024px){
+   
+}
+@media screen and (max-width:768px){
+    
+}
+
+aside.quick {
+    position: fixed;
+    right: 25px;
+    top: 124px;
+    z-index: 100;
+}
+aside.quick ul li {
+    margin-top: 32px;
+}
+aside.quick ul li a {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: #97644D;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 50px;
+    text-align: center;
+    position: relative; /* before */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1)
+}
+aside.quick ul li a::before {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 100%;
+    height: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+aside.quick ul li.youtube a::before {
+    background-image: url(../images/common/aside_youtube.png)
+}
+aside.quick ul li.foundation a::before {
+    background-image: url(../images/common/aside_found.svg)
+}
+aside.quick ul li.call a::before {
+    background-image: url(../images/common/aside_call.svg)
+}
+
+aside.top {
+    position: relative;
+    cursor: pointer;
+}
+aside.top button {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: -120px;
+    display: block;
+    color: #3d3d3d;
+    text-align: center;
+    width: 69px;
+
+}
+aside.top button img {
+    width: 100%;
+    height: 100%;
+}
+aside.top button span {
+    line-height: 35px;
+}
+@media screen and (max-width:1640px){
+    aside.quick {
+        top: 100px;
+    }
+    aside.quick ul li {
+        margin-top: 25px;
+    }
+    aside.quick ul li a {
+        width: 88px;
+        height: 88px;
+        padding-top: 50px;
+    }
+    aside.quick ul li a::before {
+        top: 16px;
+        width: 100%;
+    }
+        
+    aside.top button {
+        right: 15px;
+        top: -80px;
+        width: 50px;
+    }
+    aside.top button span {
+        line-height: 30px;
+    }
+}
+@media screen and (max-width:1024px){
+    aside.quick {
+        top: 50px;
+    }
+    aside.quick ul li {
+        margin-top: 20px;
+    }  
+    aside.top button {
+        right: 15px;
+        top: -65px;
+        width: 40px;
+    }
+    aside.top button span {
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width:768px){
+    aside.quick {
+        display: none;
+    }
+    aside.top button {
+        right: 15px;
+        top: -60px;
+        width: 30px;
+    }
+    aside.top button span {
+        line-height: 20px;
+    }
+}
+footer {
+    background-color: #302F2D;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 51px;
+    font-size: 1rem;
+}
+footer .f_cnt{
+    display: block;
+}
+footer .f_logo {
+    padding: 0 61px 0 31px;
+}
+footer .f_logo img {
+    width: 115px;
+}
+footer .f_link {
+    position: absolute;
+    bottom: 51px;
+    right: 40px;
+}
+footer .f_link ul {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 12px 12px 15px 12px;
+}
+footer .f_link ul li {
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+}
+footer .f_link ul li a {
+    width: 17px;
+    height: 17px;
+}
+footer .f_link ul li a img {
+    height: 100%;
+    width: 100%;
+}
+footer .f_nav {
+    margin: 40px 0;
+}
+footer .f_nav ul {
+    display: flex;
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+}
+footer .f_nav ul li {
+    margin: 0 42px 10px 0;
+    position: relative; /* after 정렬의 기준 */
+}
+footer .f_nav ul li.person {
+    font-weight: 700;
+}
+footer .f_nav ul li::after {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+    width: 1px;
+    height: 13px;
+    background-color: #d6d1cc;
+    content: "";
+}
+footer .f_nav ul li:last-child {
+    margin-right: 0;
+}
+footer .f_nav ul li:last-child::after {
+    display: none;
+}
+footer .f_info{
+    margin: 52px 0 34px 0;
+}
+footer .f_info span {
+    display: inline-block;
+    margin: 0 30px 10px 0;
+}
+footer .f_info br.info {
+    display: none;
+}
+footer .copyright {
+    margin: 40px 0 80px 0;
+    padding: 20px 0;
+}
+footer .f_tel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 50px 40px 50px 0;
+}
+footer .f_tel span {
+    display: block;
+    text-align: right;
+    margin-bottom: 26px;
+}
+footer .f_tel span.tell {
+    font-size: 2.25rem;
+    color: #FFCC00;
+    margin-top: 16px ;
+}
+footer .f_tel span:last-child {
+    margin-bottom:0;
+}
+@media screen and (max-width:1640px){
+    footer {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding: 51px 0 220px 0;
+    }
+    footer .f_cnt{
+        display: block;
+    }
+    footer .f_logo img {
+        width: 115px;
+    }
+    footer .f_link {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        display: block;
+        left: calc(50% - 90px);
+        top: 22px;
+    }
+    footer .f_nav {
+        display: block;
+        padding: 80px 0 36px 0;
+        margin: auto;
+        margin-left:10%;
+    }
+    footer .f_info{
+        display: block;
+        text-align: left;
+        margin: 0 0 0 10%;;
+    }
+    footer .copyright {
+        margin: 38px 0 38px 10%;
+        padding: 0;
+        text-align: left;
+    }
+    footer .f_tel {
+        left: 10%;
+        bottom: 50px;
+        top: auto;
+        right: auto;
+        margin: 0;
+        text-align: left;
+    }
+    footer .f_tel span {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    footer .f_tel span.tell {
+        margin-top: 0;
+    }
+    footer .f_tel span:last-child {
+        margin-bottom:0;
+    }
+}
+
+@media screen and (max-width:1320px){
+    footer {
+        padding: 51px 0 170px 0;
+    }
+    footer .f_nav {
+        padding: 75px 0 36px 0;
+    }
+    footer .f_nav ul li {
+        margin: 0 40px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -21px;
+        top: 4px;
+        height: 11px;
+    }
+    footer .f_tel {
+        bottom: 80px;
+    }
+}
+@media screen and (max-width:1024px){
+    footer {
+        padding: 51px 0 170px 0;
+    }
+    footer .f_nav {
+        padding: 65px 0 36px 0;
+    }
+    footer .f_nav ul li {
+        margin: 0 35px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -18px;
+        top: 3px;
+        height: 11px;
+    }
+    footer .f_tel {
+        bottom: 50px;
+    }
+}
+@media screen and (max-width:768px) {
+    footer .f_nav ul li {
+        margin: 0 30px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -16px;
+        top: 3px;
+        height: 9px;
+    }
+}
+@media screen and (max-width:500px) {
+    footer .f_nav ul li {
+        margin: 0 25px 10px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -16px;
+        top: 3px;
+        height: 9px;
+    }
+}
+  
