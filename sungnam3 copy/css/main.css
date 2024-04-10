@@ -451,26 +451,25 @@
     font-weight: 700;
     margin: 0 0 32px 0;
 }
-.rental .swiper ul {
+.rental .swiper .swiper-wrapper {
     align-items: flex-start; /* li의 높이가 다를때 아래 정렬 */
     width: 4000px;
     height: 815px;
-    margin-left: calc(50% - 510px);
 }
-.rental .swiper ul li{
+.rental .swiper .swiper-wrapper li{
     width: 1020px;
 }
-.rental .photo {
+.rental .swiper-wrapper li > a > .photo {
     position: relative;
     width: 1020px;
     height: 560px;
 }
-.rental .photo img{
+.rental .swiper-wrapper li > a > .photo img{
     filter: grayscale(100%);
     width: 100%;
     height: 100%;
 }
-.rental .cnt {
+.rental .swiper-wrapper li > a > .cnt {
     position: absolute;
     left: 0;
     bottom: 255px;
@@ -479,14 +478,87 @@
     height: 110px;
     padding: 30px 40px 0 40px;
 }
-.rental .cnt h3{
+.rental .swiper-wrapper li > a > .cnt h3{
     font-size: 30px;
     font-weight: 700;
 }
-.rental .cnt .cnt2 {
-    display: none;
+.rental .swiper-wrapper li > a > .cnt > ul{
+    margin: 30px 0 0 0;
+    width: 516px;
+    height: 170px;
+    display: flex;
 }
-swiper-slide swiper-slide-active
+.rental .swiper-wrapper li > a > .cnt > ul,
+.rental .swiper-wrapper li > a > .cnt > .btn {
+    opacity: 0;
+}
+.rental .swiper-wrapper li > a > .cnt > ul > li {
+    display: block;
+    line-height: 50px;
+}
+.rental .swiper-wrapper li > a > .cnt > ul > li > strong{
+    display: block;
+    font-weight: 700;
+}
+.rental .swiper-wrapper li > a > .cnt > ul > li > span{
+    display: block;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.rental .swiper-wrapper li > a > .cnt > .btn {
+    position: absolute;
+    right: 90px;
+    top: 124px;
+    padding: 5px;
+}
+.rental .swiper-wrapper li > a > .cnt > .btn button {
+    display: block;
+    width: 167px;
+    line-height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0 30px 0 0;
+    position: relative; /* after 정렬의 기준 */
+    transition: 0.2s;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.rental .swiper-wrapper li > a > .cnt > .btn button::after {
+    position: absolute; /* a를 기준으로 정렬 */
+    right: 25px;
+    top: 15px;
+    width: 28px;
+    height: 28px;
+    content: "";
+    background-image: url(../images/main/arrow_r.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    transition: 0.2s;
+}
+.rental .swiper-wrapper li > a > .cnt > .btn button:last-child {
+    background: linear-gradient(to right, #FFC618, #FFA300);
+    color: #1d1d1d;
+    border: 0;
+} 
+.rental .swiper-wrapper li > a > .cnt > .btn button:last-child:after {
+    background-image: url(../images/main/arrow_r_b.svg);
+}
+.rental .swiper-wrapper li > a > .cnt > .btn button:last-child:hover:after {
+    background-image: url(../images/main/arrow_r_b.svg);
+    animation-name: more; 
+    animation-duration: 2s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes more {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(-10px, 0) }
+    100% { transform:translate(0, 0) }
+}
 /*active*/
 .rental .swiper {
     position: relative;
@@ -505,82 +577,14 @@ swiper-slide swiper-slide-active
     height: 370px;
     padding: 60px 70px 0 70px;
     border-radius: 80px 0 80px 0;
-    display: block;
 }
-.rental .swiper ul li.swiper-slide-active .cnt .cnt2 {
-    display: block;
-    text-align: center;
+.rental .swiper-wrapper li.swiper-slide-active > a > .cnt > ul,
+.rental .swiper-wrapper li.swiper-slide-active > a > .cnt > .btn {
+    opacity: 100;
+    transition: 3s;
 }
-.rental .swiper ul li.swiper-slide-active .cnt .cnt2 ul {
-    margin: 30px 0 0 0;
-    width: 516px;
-    height: 170px;
-    display: flex;
-}
-.rental .swiper ul li.swiper-slide-active .cnt .cnt2 ul li:first-child span{
-    font-weight: 700;
-}
-.rental .swiper ul li.swiper-slide-active .cnt .cnt2 ul li span{
-    display: block;
-    text-align: left;
-    line-height: 50px;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-}
-.rental .swiper ul li.swiper-slide-active .cnt .btn {
-    position: absolute;
-    right: 90px;
-    top: 124px;
-    padding: 5px;
-}
-.rental .swiper ul li.swiper-slide-active .cnt .btn button {
-    display: block;
-    width: 167px;
-    line-height: 60px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    display: block;
-    padding: 0 30px 0 0;
-    position: relative; /* after 정렬의 기준 */
-    transition: 0.2s;
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 17px;
-}
-.rental .swiper ul li.swiper-slide-active .cnt .btn button::after {
-    position: absolute; /* a를 기준으로 정렬 */
-    right: 25px;
-    top: 15px;
-    width: 28px;
-    height: 28px;
-    content: "";
-    background-image: url(../images/main/arrow_r.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 28px auto;
-    transition: 0.2s;
-}
-.rental .swiper ul li.swiper-slide-active .cnt .btn button:last-child {
-    background: linear-gradient(to right, #FFC618, #FFA300);
-    color: #1d1d1d;
-    border: 0;
-} 
-.rental .swiper ul li.swiper-slide-active .cnt .btn button:last-child:after {
-    background-image: url(../images/main/arrow_r_b.svg);
-}
-.rental .swiper ul li.swiper-slide-active .cnt .btn button:last-child:hover:after {
-    background-image: url(../images/main/arrow_r_b.svg);
-    animation-name: more; 
-    animation-duration: 2s; 
-    animation-iteration-count:infinite; 
-    animation-timing-function:linear;
-}
-@keyframes more {
-    0% { transform:translate(0, 0) }
-    50% { transform:translate(-10px, 0) }
-    100% { transform:translate(0, 0) }
-}
+
+
 
 @media screen and (max-width:1640px){
     
