@@ -29,7 +29,7 @@ $(document).ready(function(){
           slideShadow: false,
           stretch:70,
         },
-        speed: 2000,
+        speed: 1000,
         autoplay: {  /* 팝업 자동 실행 */
         delay: 3000,
         disableOnInteraction: true,
@@ -69,5 +69,19 @@ $(document).ready(function(){
         duration: 500, // 애니메이션 효과가 작동되는 시간
         easing: 'ease', // 가속도
     });
+
+    // let scrolling
+    // function scroll_chk(){
+    //     scrolling = $(window).scrollTop()
+    //     if(scrolling > 500){
+    //         $('aside.reserve').show()
+    //     }else{
+    //         $('aside.reserve').hide()
+    //     }
+    // }
+    // scroll_chk()
+    // $(window).scroll(function(){
+    //     scroll_chk()
+    // })
 
 })

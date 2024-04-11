@@ -23,7 +23,7 @@ $(document).ready(function(){
          scroll_prev = scroll_curr
          scroll_curr = $(window).scrollTop()
          scroll_dir = scroll_prev - scroll_curr
-         console.log(scroll_dir)
+         //console.log(scroll_dir)
          if(scroll_curr > 50){
              $('header').addClass('fixed')
              if(scroll_dir > 0){ //위로스크롤 - 나타나야함
@@ -56,7 +56,7 @@ $(document).ready(function(){
          }else{ //모바일
              device_status = 'mobile'
          }
-         console.log(device_status)
+         //console.log(device_status)
      }
      device_chk() //문서가 로딩되고 1번 실행
      $(window).resize(function(){
