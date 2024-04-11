@@ -102,3 +102,86 @@ header .tnb ul li.lang a {
     /* 메뉴고정 */
 
 }
+
+footer {
+    border-top: 1px solid #d6d1cc;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+}
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+footer .f_logo {
+    margin: 40px 0 0 50px;
+}
+footer .f_logo img {
+    width: 141px;
+}
+footer .f_nav {
+    margin: 80px 48px;
+    text-align: left;
+}
+footer .f_nav button {
+    display: none;
+}
+footer .f_nav ul {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+}
+footer .f_nav ul li {
+    margin: 0 42px 10px 0;
+    position: relative; /* after 정렬의 기준 */
+}
+footer .f_nav ul li::after {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+    width: 1px;
+    height: 10px;
+    background-color: #d6d1cc;
+    content: "";
+}
+footer .f_nav ul li:last-child {
+    margin-right: 0;
+}
+footer .f_nav ul li:last-child::after {
+    display: none;
+}
+footer .f_nav.open ul {
+    display: block;
+}
+footer .f_nav.open button.f_nav_open {
+    display: none;
+}
+footer .f_nav.open button.f_nav_close {
+    display: block;
+}
+footer .f_info span {
+    display: inline-block;
+    margin: 0 20px 10px 0;
+}
+footer .copyright {
+    margin: 40px 0 0 0;
+    padding: 20px 0;
+    background-color: #876f53;
+    color: #fff;
+}
+@media screen and (max-width:1640px){
+   
+}
+
+@media screen and (max-width:1320px){
+  
+}
+@media screen and (max-width:1024px){
+   
+}
+@media screen and (max-width:768px) {
+  
+}
+@media screen and (max-width:500px) {
+  
+}
+  
