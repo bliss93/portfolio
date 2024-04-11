@@ -43,6 +43,9 @@ $(document).ready(function(){
      $(window).scroll(function(){ //스크롤 할때마다 1번 실행
          scroll_chk() 
      })
+
+
+
  
      /******************************************************
           메뉴에 마우스를 오버하면 header에 menu_over 클래스 추가

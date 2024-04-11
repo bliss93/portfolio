@@ -70,18 +70,27 @@ $(document).ready(function(){
         easing: 'ease', // 가속도
     });
 
-    // let scrolling
-    // function scroll_chk(){
-    //     scrolling = $(window).scrollTop()
-    //     if(scrolling > 500){
-    //         $('aside.reserve').show()
-    //     }else{
-    //         $('aside.reserve').hide()
-    //     }
-    // }
-    // scroll_chk()
-    // $(window).scroll(function(){
-    //     scroll_chk()
-    // })
+
+    let scrolling
+    function scroll_chk(){
+        scrolling = $(window).scrollTop()
+        if(scrolling > 500){
+            $('.side_btn').fadeIn(50)
+        }else{
+            $('.side_btn').fadeOut(50)
+        }
+
+    }
+    scroll_chk()
+    $(window).scroll(function(){
+        scroll_chk()
+    })
+    $('.side_btn').fadeIn();
+
+
+
+
+
+
 
 })

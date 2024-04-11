@@ -47,48 +47,40 @@
    
 }
 
-.container .side_btn {
-    position: relative;
+.side_btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    top: 45px;
+    right: 190px;
+    line-height: 60px;
 }
-.side_btn aside.reserve button {
-    position: absolute;
-    right: 93px;
-    top: 30px;
-    width: 57px;
-    height: 57px;
-    border-radius: 100%;
-    background-color: #e80e50;
-    color: #fff;
+.side_btn .reserve {
+    width: 194px;
+    height: 60px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #FFC618, #FFA300);
+    color: #1d1d1d;
     text-align: center;
-    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 33px;
+    cursor: pointer;
 }
-.side_btn aside.reserve button::before {
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 100%;
-    height: 13px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24' fill='%23fff'%3E%3Cpath d='M434.5-808.131v481.979L215.761-544.891 151.869-480 480-151.869 808.131-480l-63.892-64.891L525.5-326.152v-481.979h-91Z'/%3E%3C/svg%3E");
-    transform: rotate(180deg);
-    content: "";
-}
-
-.side_btn aside.side button {
-    position: absolute;
-    right: 0;
-    top: 30px;
+.side_btn .side {
+    position: relative;
     width: 60px;
     height: 60px;
     border-radius: 100%;
     background-color: #fff;
     font-size: 0;
     line-height: 0;
+    cursor: pointer;
 }
-.side_btn aside.side button::before {
+.side_btn .side::before {
     position: absolute;
-    left: 0;
+    left: 12px;
     top: 10px;
     width: 36px;
     height: 36px;
@@ -100,60 +92,14 @@
 }
 
 @media screen and (max-width:1640px){
-    aside.quick {
-        top: 100px;
-    }
-    aside.quick ul li {
-        margin-top: 25px;
-    }
-    aside.quick ul li a {
-        width: 88px;
-        height: 88px;
-        padding-top: 50px;
-    }
-    aside.quick ul li a::before {
-        top: 16px;
-        width: 100%;
-    }
-        
-    aside.top button {
-        right: 15px;
-        top: -80px;
-        width: 50px;
-    }
-    aside.top button span {
-        line-height: 30px;
-    }
+
 }
 @media screen and (max-width:1024px){
-    aside.quick {
-        top: 50px;
-    }
-    aside.quick ul li {
-        margin-top: 20px;
-    }  
-    aside.top button {
-        right: 15px;
-        top: -65px;
-        width: 40px;
-    }
-    aside.top button span {
-        line-height: 28px;
-    }
+ 
 }
 
 @media screen and (max-width:768px){
-    aside.quick {
-        display: none;
-    }
-    aside.top button {
-        right: 15px;
-        top: -60px;
-        width: 30px;
-    }
-    aside.top button span {
-        line-height: 20px;
-    }
+ 
 }
 .show .slogan {
     position: absolute;
