@@ -77,20 +77,12 @@ $(document).ready(function(){
         if(scrolling > 500){
             $('.side_btn').fadeIn(50)
         }else{
-            $('.side_btn').fadeOut(50)
+            $('.side_btn').hide()
         }
-
     }
     scroll_chk()
+
     $(window).scroll(function(){
         scroll_chk()
     })
-    $('.side_btn').fadeIn();
-
-
-
-
-
-
-
 })

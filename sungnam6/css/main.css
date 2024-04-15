@@ -1422,13 +1422,13 @@
     display: block;
     padding: 5px;
 }
-.rental .swiper-wrapper li > a > .cnt > ul > li.btn button {
+.rental .swiper-wrapper li > a > .cnt > ul > li.btn > span {
     display: block;
     width: 167px;
     line-height: 60px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     display: block;
-    padding: 0 30px 0 0;
+    padding: 0 30px 0 30px;
     position: relative; /* after 정렬의 기준 */
     transition: 0.2s;
     border-radius: 50px;
@@ -1436,7 +1436,7 @@
     font-weight: 700;
     margin-bottom: 17px;
 }
-.rental .swiper-wrapper li > a > .cnt > ul > li.btn button::after  {
+.rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after  {
     position: absolute; /* a를 기준으로 정렬 */
     right: 25px;
     top: 15px;
@@ -1449,15 +1449,15 @@
     background-size: 28px auto;
     transition: 0.2s;
 }
-.rental .swiper-wrapper li > a > .cnt > ul > li.btn button:last-child {
+.rental .swiper-wrapper li > a > .cnt > ul > li.btn > span:last-child {
     background: linear-gradient(to right, #FFC618, #FFA300);
     color: #1d1d1d;
     border: 0;
 } 
-.rental .swiper-wrapper li > a > .cnt > ul > li.btn button:last-child:after {
+.rental .swiper-wrapper li > a > .cnt > ul > li.btn > span:last-child:after {
     background-image: url(../images/main/arrow_r_b.svg);
 }
-.rental .swiper-wrapper li > a > .cnt > ul > li.btn button:last-child:hover:after {
+.rental .swiper-wrapper li > a > .cnt > ul > li.btn > span:last-child:hover:after {
     background-image: url(../images/main/arrow_r_b.svg);
     animation-name: more; 
     animation-duration: 2s; 
@@ -1539,13 +1539,13 @@
     .rental .swiper-wrapper li > a > .cnt > ul > li.btn {
         padding: 5px;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button {
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span {
         width: 167px;
         line-height: 50px;
-        padding: 0 30px 0 0;
+        padding: 0 30px 0 30px;
         margin-bottom: 17px;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button::after {
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after {
         right: 25px;
         top: 15px;
         width: 28px;
@@ -1608,14 +1608,14 @@
         bottom: 20px;
         display: flex;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button {
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span {
         width: 167px;
         line-height: 40px;
-        padding: 0 30px 0 0;
+        padding: 0 30px 0 20px;
         margin: 0 10px 17px 10px;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button::after {
-        right: 20px;
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after {
+        right: 11px;
         top: 10px;
         width: 20px;
         height: 20px;
@@ -1634,6 +1634,9 @@
 @media screen and (max-width:1024px){
     .rental {
         margin: 80px 0 0 0;
+    }
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after {
+        right: 18px;
     }
 }
 @media screen and (max-width:768px){
@@ -1686,14 +1689,14 @@
         bottom: 20px;
         display: flex;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button {
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span {
         width: 167px;
         line-height: 40px;
-        padding: 0 30px 0 0;
+        padding: 0 30px 0 30px;
         margin: 0 10px 17px 10px;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button::after {
-        right: 20px;
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after {
+        right: 15px;
         top: 10px;
         width: 20px;
         height: 20px;
@@ -1759,13 +1762,13 @@
         bottom: 0;
         display: flex;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button {
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span {
         width: 167px;
         line-height: 30px;
         padding: 0 25px 0 10px;
         margin: 0 10px 17px 10px;
     }
-    .rental .swiper-wrapper li > a > .cnt > ul > li.btn button::after {
+    .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after {
         right: 5px;
         top: 6px;
         width: 18px;
