@@ -675,12 +675,13 @@
         display: block;
     }
     .show .list > ul > li .detail ul li {
-        width: 320px;
+        width: 100%;
+        height: 100%;
         margin: 20px 20px 20px 0;
     }
     .show .list > ul > li .detail ul li a span {
-        width: 320px;
-        height: 320px;
+        width: 100%;
+        height: 100%;
     }
     .show .list > ul > li .detail ul li a strong {
         margin: 24px 0 6px 0;
@@ -1311,11 +1312,11 @@
         display: block;
     }
     .join .list ul li {
-        width: 320px;
+        width: 100%;
         margin: 20px 20px 20px 0;
     }
     .join .list ul li a span {
-        width: 320px;
+        width: 100%;
     }
     .join .list ul li a strong {
         margin: 24px 0 6px 0;
@@ -1422,6 +1423,7 @@
     padding: 5px;
 }
 .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span {
+    text-overflow: unset;
     display: block;
     width: 167px;
     line-height: 60px;
@@ -1500,6 +1502,7 @@
     }
     .rental h2 {
         margin: 32px auto;
+        text-align: center;
     }
     .rental .swiper .swiper-wrapper {
         width: 2500px;
@@ -1530,10 +1533,10 @@
         line-height: 45px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li:first-child {
-        width: 200px;
+        width: 250px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li:last-child {
-        width: 300px;
+        width: 200px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li.btn {
         padding: 5px;
@@ -1553,19 +1556,16 @@
     /*active*/
     .rental .swiper ul li.swiper-slide-active .cnt {
         left: 0;
-        bottom: 0;
+        bottom: 50px;
         width: 800px;
         height: 370px;
         padding: 60px 70px 0 70px;
-        border-radius: 80px 0 80px 0;
+        border-radius: 50px 0 50px 0;
     }
 }
 @media screen and (max-width:1320px){
     .rental {
         margin: 100px 0 0 0;
-    }
-    .rental h2 {
-        margin: 0 0 30px 42%;
     }
     .rental .swiper .swiper-wrapper {
         width: 2100px;
@@ -1612,6 +1612,7 @@
         line-height: 40px;
         padding: 0 30px 0 20px;
         margin: 0 10px 17px 10px;
+        text-overflow: none; 
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after {
         right: 11px;
@@ -1623,11 +1624,11 @@
     /*active*/
     .rental .swiper ul li.swiper-slide-active .cnt {
         left: 0;
-        bottom: -10px;
+        bottom: 50px;
         width: 600px;
         height: 400px;
         padding: 50px 50px 0 50px;
-        border-radius: 80px 0 80px 0;
+        border-radius: 40px 0 40px 0;
     }
 }
 @media screen and (max-width:1024px){
@@ -1642,9 +1643,6 @@
     .rental {
         margin: 60px 0 0 0;
     }
-    .rental h2 {
-        margin: 0 0 30px 38%;
-    }
     .rental .swiper .swiper-wrapper {
         width: 1400px;
         height: 600px;
@@ -1658,7 +1656,7 @@
     }
     .rental .swiper-wrapper li > a > .cnt {
         left: 0;
-        bottom: 360px;
+        bottom: 300px;
         width: 400px;
         height: 80px;
         padding: 20px 30px 0 30px;
@@ -1673,7 +1671,7 @@
         line-height: 45px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li:first-child {
-        width: 80px;
+        width: 100px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li:last-child {
         width: 300px;
@@ -1690,7 +1688,7 @@
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span {
         width: 167px;
-        line-height: 40px;
+        line-height: 35px;
         padding: 0 30px 0 30px;
         margin: 0 10px 17px 10px;
     }
@@ -1706,21 +1704,18 @@
         left: 0;
         bottom: 30px;
         width: 400px;
-        height: 400px;
+        height: 370px;
         padding: 50px 40px 0 40px;
-        border-radius: 50px 0 50px 0;
+        border-radius: 40px 0 40px 0;
     }
 }
 @media screen and (max-width:500px){
     .rental {
         margin: 60px 0 0 0;
     }
-    .rental h2 {
-        margin: 0 0 30px 20%;
-    }
     .rental .swiper .swiper-wrapper {
         width: 900px;
-        height: 420px;
+        height: 380px;
         padding-bottom: 30px;
     }
     .rental .swiper .swiper-wrapper li{
@@ -1731,9 +1726,9 @@
     }
     .rental .swiper-wrapper li > a > .cnt {
         left: 0;
-        bottom: 525px;
+        bottom: 220px;
         width: 250px;
-        height: 80px;
+        height: 60px;
         padding: 20px 30px 0 30px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul{
@@ -1743,13 +1738,13 @@
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li {
         display: block;
-        line-height: 45px;
+        line-height: 30px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li:first-child {
         width: 100px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li:last-child {
-        width: 200px;
+        width: 220px;
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li > span{
         width: 150px;
@@ -1769,19 +1764,19 @@
     }
     .rental .swiper-wrapper li > a > .cnt > ul > li.btn > span::after {
         right: 5px;
-        top: 6px;
-        width: 18px;
-        height: 18px;
-        background-size: 18px auto;
+        top: 7px;
+        width: 16px;
+        height: 16px;
+        background-size: 16px auto;
     }
     /*active*/
     .rental .swiper ul li.swiper-slide-active .cnt {
         left: 0;
-        bottom: -0px;
+        bottom: 10px;
         width: 250px;
-        height: 320px;
-        padding: 25px 20px 0 20px;
-        border-radius: 40px 0 40px 0;
+        height: 260px;
+        padding: 30px 30px 0 30px;
+        border-radius: 20px 0 20px 0;
     }
 }
 .sponsor {
@@ -1857,7 +1852,7 @@
 }
 @media screen and (max-width:768px){
     .sponsor {
-        margin: 40px 0 60px 0;
+        margin: 10px 0 60px 0;
     }
     .sponsor .list ul li {
         width: 160px;
