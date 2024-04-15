@@ -319,9 +319,9 @@
     transition: 0.5s;
 }
 .show .list > ul > li.active > button {
-    border-color: #FEC619;
-    box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-    transform: translateY(-10px);
+    background: linear-gradient(to right top, #FFC618, #FFA300);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 .show .list > ul > li > button::before {
     position: absolute;
@@ -386,8 +386,10 @@
     transition: 0.5s;
 }
 .show .list > ul > li .detail ul li a:hover h3 {
-    box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-    transform: translateY(-10px);
+    background: linear-gradient(to right top, #FFC618, #FFA300);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 0.5s;
 }
 .show .list > ul > li .detail .more {
     position: absolute; 
@@ -477,10 +479,6 @@
     .show .list > ul > li .detail ul li a h3 {
         margin: 0 0 15px 0;
     }
-    .show .list > ul > li .detail ul li a:hover h3 {
-        box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-        transform: translateY(-10px);
-    }
      .show .list > ul > li .detail .more {
         position: absolute; 
         right: auto;
@@ -535,10 +533,6 @@
     .show .list > ul > li .detail ul li a h3 {
         margin: 0 0 14px 0;
     }
-    .show .list > ul > li .detail ul li a:hover h3 {
-        box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-        transform: translateY(-8px);
-    }
     .show .list > ul > li .detail .more {
         bottom: -65px;
         left: calc(50% - 65px);
@@ -590,10 +584,6 @@
     .show .list > ul > li .detail ul li a h3 {
         margin: 0 0 13px 0;
     }
-    .show .list > ul > li .detail ul li a:hover h3 {
-        box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-        transform: translateY(-8px);
-    }
     .show .list > ul > li .detail .more {
         bottom: -60px;
         left: calc(50% - 60px);
@@ -644,10 +634,6 @@
     }
     .show .list > ul > li .detail ul li a h3 {
         margin: 0 0 12px 0;
-    }
-    .show .list > ul > li .detail ul li a:hover h3 {
-        box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-        transform: translateY(-8px);
     }
     .show .list > ul > li .detail .more {
         bottom: -55px;
@@ -702,10 +688,6 @@
     .show .list > ul > li .detail ul li a h3 {
         margin: 0 0 12px 0;
     }
-    .show .list > ul > li .detail ul li a:hover h3 {
-        box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-        transform: translateY(-8px);
-    }
     .show .list > ul > li .detail .more {
         bottom: -40px;
         left: calc(50% - 55px);
@@ -757,13 +739,12 @@
     padding: 9px 25px;
     background-color: #fff;
     border-radius: 50px;
-    transition: 1s;
+    transition: 0.5s;
 }
 .news ul li:hover a em {
     background: linear-gradient(to right, #FFC618, #FFA300);
-    border-color: #FEC619;
-    box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-    transform: translateY(-10px);
+    border: 0;
+    font-weight: 700;
 }
 .news ul li a strong {
     width: 1150px; 
@@ -810,6 +791,24 @@
     background-repeat: no-repeat;
     background-size: 28px auto;
     transition: 0.2s;
+}
+.news .more a:hover {
+    background: linear-gradient(to right, #FFC618, #FFA300);
+    border: 0;
+    color: #1d1d1d;
+    font-weight: 700;
+}
+.news .more a:hover::after {
+    background-image: url(../images/main/arrow_r_b.svg);
+    animation-name: more; 
+    animation-duration: 2s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes more {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(-10px, 0) }
+    100% { transform:translate(0, 0) }
 }
 @media screen and (max-width:1640px){
     .news {
@@ -1080,8 +1079,10 @@
 }
 .join .list ul li a:hover h3 {
     margin: 0 0 32px 0;
-    box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-    transform: translateY(-10px);
+    background: linear-gradient(to right top, #FFC618, #FFA300);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 0.5s;
 }
 .join .list ul li a p {
     /* 여러줄로 줄수를 제한하는 경우 */
@@ -1352,8 +1353,6 @@
     font-size: 2.941rem;
     font-weight: 700;
     margin: 0 0 32px 0;
-    box-shadow: 0 0.5em 0.5em -0.4em #ffc619;
-    transform: translateY(-10px);
 }
 .rental .swiper .swiper-wrapper {
     align-items: flex-start; /* li의 높이가 다를때 아래 정렬 */
@@ -1500,7 +1499,7 @@
         margin: 110px 0 0 0;
     }
     .rental h2 {
-        margin: 0 0 32px 42%;
+        margin: 32px auto;
     }
     .rental .swiper .swiper-wrapper {
         width: 2500px;
