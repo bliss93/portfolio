@@ -29,21 +29,21 @@ $(document).ready(function(){
           slideShadow: false,
           stretch:70,
         },
-        // speed: 1000,
-        // autoplay: {  /* 팝업 자동 실행 */
-        // delay: 3000,
-        // disableOnInteraction: true,
-        // },
+        speed: 1000,
+        autoplay: {  /* 팝업 자동 실행 */
+        delay: 3000,
+        disableOnInteraction: true,
+        },
     });
 
-    // $(".rental .swiper").each(function(elem, target){
-    //     var swp = target.swiper;
-    //     $(this).hover(function() {
-    //         swp.autoplay.stop();
-    //     }, function() {
-    //         swp.autoplay.start();
-    //     });
-    // });
+    $(".rental .swiper").each(function(elem, target){
+        var swp = target.swiper;
+        $(this).hover(function() {
+            swp.autoplay.stop();
+        }, function() {
+            swp.autoplay.start();
+        });
+    });
 
     const sponsor_swiper = new Swiper('.sponsor .swiper', { /* 팝업을 감싼는 요소의 class명 */
         slidesPerView: 'auto', /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
