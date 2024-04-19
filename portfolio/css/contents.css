@@ -1,0 +1,90 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+.content {
+    margin: 76px 0 0 0;
+    height: calc(100vh - 190px);
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.content .top_banner .img {
+    font-size: 0;
+    line-height: 0;
+}
+.content .top_banner .img img{
+    width: 516px;
+}
+.content .top_tit {
+    color: #11285C;
+    font-size: 23px;
+    font-weight: 700;
+    background-color: #ededed;
+    padding: 20px 0 17px 0;
+    margin-bottom: 13px;
+    text-align: center;
+}
+.content .top_tit span {
+    border-bottom: 2.5px solid #11285C;
+    padding: 6px 0 6px 0;
+}
+.content .top_banner {
+    margin: 0 0 13px 16px;
+}
+.content .portfolio ul > li {
+    margin: 0 0 13px 16px;
+}
+.content .portfolio ul > li .img {
+    font-size: 0;
+    line-height: 0;
+}
+.content .portfolio ul > li > .img > img{
+    width: 516px;
+    height: 100%;
+}
+.content .portfolio ul > li > .list01 {
+    background-color: #1d1d1d;
+    color: #fff;
+    display: block;
+    height: 284px;
+    text-align: left;
+    padding: 45px 0 0 37px;
+}
+.content .portfolio ul > li > .list01 > strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -1.5px;
+}
+.content .portfolio ul > li > .list01 > span {
+    display: block;
+    margin-bottom: 24px;
+}
+.content .portfolio ul > li > .list01 > .btn_link a {
+    display: block;
+    background-color: #343434;
+    padding: 0 0 0 14px;
+    width: 160px;
+    line-height: 31px;
+    border: 0;
+    border-radius: 50px;
+    position: relative;
+}
+.content .portfolio ul > li > .list01 > .btn_link a::before {
+    position: absolute;
+    right: 18px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background-image: url(../images/main/link.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    transition: 0.5s;
+}
+
+
+

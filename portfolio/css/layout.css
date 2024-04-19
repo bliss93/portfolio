@@ -1,0 +1,67 @@
+/*
+    파일명 : layout.css
+    작성자 : 윤서하 
+    작성일 : 2024.04.01
+    설  명 : header, footer 
+*/
+.top {
+    height: 76px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.top .wrapper {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 31px 31px 25px 51px;
+}
+.top .wrapper.on,
+.top .wrapper[data-menu="on"] {
+    background-color: #ededed;
+}
+
+.top .js-clock {
+    font-size: 25px;
+}
+
+.btm_menu {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+.btm_menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 44px 44px 44px;
+}
+.btm_menu ul > li > a {
+    display: block;
+}
+.btm_menu ul > li.on > a > span,
+.btm_menu ul > li[data-menu="on"] > a > span{
+    color: #11285C;
+    font-weight: 700;
+}
+
+.btm_menu ul > li > a > img {
+    width: 41px;
+    height: 100%;
+}
+.btm_menu ul > li > a > span{
+    display: block;
+    font-size: 15px;
+    color: #ACADB1;
+    text-align: center;
+} 
+

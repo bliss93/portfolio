@@ -2,18 +2,75 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>윤서하의 포트폴리오</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--swiper 라이브러리-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- AOS를 작동시키기 위한 css와 js파일 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="portfolio/css/main.css">
+    <script src="portfolio/js/jquery-3.7.1.min.js"></script>
+    <script src="portfolio/js/common.js"></script>
+    <script src="portfolio/js/main.js"></script>
+    <title>포트폴리오 - 홈</title>
 </head>
 <body>
-    <ul>
-        <li><a href="bong3/index.html">봉명동내커피</a></li>
-        <li><a href="sungnam/index.html">성남아트센터</a></li>
-        <li><a href="sungnam2/index.html">성남아트센터2</a></li>
-        <li><a href="sungnam3/index.html">성남아트센터3</a></li>
-        <li><a href="sungnam3 copy/index.html">성남아트센터4</a></li>
-        <li><a href="sungnam5/index.html">성남아트센터5</a></li>
-        <li><a href="sungnam6/index.html">성남아트센터6</a></li>
-    </ul>
+    <div id="wrap">
+        <div class="top">
+            <div class="wrapper">
+                <div class="js-clock">
+                   <h1>00:00</h1>
+                </div>
+                <div class="nav">
+                    <img src="portfolio/images/common/Right Side.png" alt="사이드바">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <img src="portfolio/images/main/main_banner01.png" alt="메인배너">
+            </div>
+        </div>
+        <div class="btm_menu">
+            <div class="wrapper">
+                <ul>
+                    <li class="on" data-menu="on">
+                        <a href="index.html">
+                            <img src="portfolio/images/common/home.svg" alt="홈">
+                            <span>홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio/contents/photo.html">
+                            <img src="portfolio/images/common/photo_b.svg" alt="앨범">
+                            <span>앨범</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio/contents/chat.html">
+                            <img src="portfolio/images/common/message_b.svg" alt="채팅">
+                            <span>채팅</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio/contents/alert.html">
+                            <img src="portfolio/images/common/alert_b.svg" alt="알림">
+                            <span>알림</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio/contents/more.html">
+                            <img src="portfolio/images/common/more_b.svg" alt="더보기">
+                            <span>더보기</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="portfolio/js/clock.js"></script>
+    </div>
 </body>
 </html>
