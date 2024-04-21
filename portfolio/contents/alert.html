@@ -7,6 +7,8 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/contents.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <title>포트폴리오 - 알림</title>
 </head>
 <body>
@@ -23,38 +25,65 @@
         </div>
         <div class="content">
             <div class="wrapper">
-                <div class="top_tit">
-                    <h2>포트<span>폴리오</span></h2>
+                <div class="top_part">
+                    <h2>알림</h2>
                 </div>
-                <div class="top_banner">
-                    <div class="img"><img src="../images/main/top_banner01.png" alt="탑배너"></div>
+                <div class="top_ad">
+                   <div class="speaker"><img src="../images/main/speaker.svg" alt="스피커"></div>
+                   <strong>[Speaker]</strong>
+                   <span>함께하고 싶은 인재!</span>
+                   <div class="new"><img src="../images/main/new.png" alt="new"></div>
                 </div>
-                <div class="portfolio">
+                <div class="swiper"> 
+                    <ul class="swiper-wrapper"> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <span><img src="../images/main/mid_banner01.png" alt="배너01"></span>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <span><img src="../images/main/mid_banner02.png" alt="배너02"></span>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <span><img src="../images/main/mid_banner03.png" alt="배너03"></span>
+                            </a>
+                        </li> 
+                    </ul>
+                    <div class="paging"></div>
+                </div>
+                <div class="ctf_list">
                     <ul>
                         <li>
-                            <div class="img"><img src="../images/main/portfolio01.png" alt="포트폴리오_봉명동내커피"></div>
-                            <div class="list01">
-                                <strong>봉명동내커피</strong>
-                                <span>2024. 04. 01 - 2024. 04. 07</span>
-                                <div class="btn_link">
-                                    <a href="../../bong3/index.html">WEB 바로가기</a>
-                                </div>
+                            <span><img src="../images/main/ctf01.png" alt="kpc자격"></span>
+                            <div class="ctf_cnt">
+                                <strong>GTQ 포토샵 1급</strong>
                             </div>
                         </li>
                         <li>
-                            <div class="img"><img src="../images/main/portfolio02.png" alt="포트폴리오_봉명동내커피"></div>
-                            <div class="list01">
-                                <strong>성남아트센터</strong>
-                                <span>2024. 04. 08 - 2024. 04. 15</span>
-                                <div class="btn_link">
-                                    <a href="../../sungnam6/index.html">WEB 바로가기</a>
-                                </div>
+                            <span><img src="../images/main/ctf01.png" alt="kpc자격"></span>
+                            <div class="ctf_cnt">
+                                <strong>GTQ 일러스트 1급</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <span><img src="../images/main/ctf02.png" alt="대한상공회의소자격평가사업단"></span>
+                            <div class="ctf_cnt">
+                                <strong>컴퓨터 활용능력 1급</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <span><img src="../images/main/ctf03.png" alt="actfl opic"></span>
+                            <div class="ctf_cnt">
+                                <strong>OPIC IH등급</strong>
                             </div>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </div><!--wrapper-->
+        </div><!--content-->
         <div class="btm_menu">
             <div class="wrapper">
                 <ul>
