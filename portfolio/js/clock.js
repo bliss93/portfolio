@@ -17,5 +17,5 @@ function init(){
     setInterval(getTime, 1000); // 시간 간격을 정함, 호출할 함수 / milliseconds 순
 }
 
-init(); 실행
+init();
 

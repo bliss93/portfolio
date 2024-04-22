@@ -22,30 +22,30 @@
     background-color: #003348;
     color: #fff;
 }
-*::-moz-selection { /* 호환성을 위한 코드 */
+*::-moz-selection { 
     background-color: #003348;
     color: #fff;
 }
 html, body {
-    font-family: 'Pretendard', sans-serif; /* 서체 serif 명조 sans-serif 고딕 */
-    font-size: 17px; /* 크기 */
+    font-family: 'Pretendard', sans-serif; 
+    font-size: 17px;
     background-color: #e5e5e5;
-    color: #1d1d1d; /* 글자색상 */
-    font-weight: 400; /* 글자의 두께 */
-    line-height: 1.2; /* auto */
-    word-break: keep-all; /* 단어를 묶어서 줄바꿈 */
-    word-wrap: break-word; /* 만약 단어가 엄청 길면 분리해서 줄바꿈 */
+    color: #1d1d1d; 
+    font-weight: 400;
+    line-height: 1.2; 
+    word-break: keep-all; 
+    word-wrap: break-word; 
 }
 
 p, a, h1, h2, h3, h4, h5, h6 {
     transform: skew(-0.1deg);
 }
 
-.wrapper { /* 홈페이지의 넓이를 제한하고 가운데 정렬 */
-    width: 550px; /* 홈페이지 넓이 */
-    margin: 0 auto;  /* 가운데 정렬 */
+.wrapper { 
+    width: 550px; 
+    margin: 0 auto;  
 }
-#wrap { /* id="wrap"에 적용되는 스타일 */
+#wrap {
     width: 550px;
     height: 100vh;
     margin: 0 auto;
@@ -84,7 +84,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
 /*
     파일명 : common.css
     작성자 : 윤서하
-    작성일 : 24.03.28
+    작성일 : 24.04.22
     설  명 : 홈페이지 전체에 공통으로 적용되는 스타일을 저장
              문자스타일 등의 기본스타일만 저장
 

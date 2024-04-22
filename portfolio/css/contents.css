@@ -33,36 +33,38 @@
     margin: 0 0 13px 16px;
 }
 .content .portfolio ul > li {
-    margin: 0 0 13px 16px;
+    margin: 0 5px 0 5px;
 }
-.content .portfolio ul > li .img {
+.content .portfolio ul > li > a > .img {
     font-size: 0;
     line-height: 0;
 }
-.content .portfolio ul > li > .img > img{
-    width: 516px;
+.content .portfolio ul > li > a > .img > img{
+    width: 530px;
     height: 100%;
 }
-.content .portfolio ul > li > .list01 {
+.content .portfolio ul > li > a > .list01 {
     background-color: #1d1d1d;
     color: #fff;
     display: block;
     height: 284px;
     text-align: left;
     padding: 45px 0 0 37px;
+    width: 530px;
 }
-.content .portfolio ul > li > .list01 > strong {
+.content .portfolio ul > li > a > .list01 > strong {
+    height: 50px;
     display: block;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 24px;
     letter-spacing: -1.5px;
 }
-.content .portfolio ul > li > .list01 > span {
+.content .portfolio ul > li > a > .list01 > span {
     display: block;
     margin-bottom: 24px;
 }
-.content .portfolio ul > li > .list01 > .btn_link a {
+.content .portfolio ul > li > a > .list01 > .btn_link > span {
     display: block;
     background-color: #343434;
     padding: 0 0 0 14px;
@@ -72,7 +74,7 @@
     border-radius: 50px;
     position: relative;
 }
-.content .portfolio ul > li > .list01 > .btn_link a::before {
+.content .portfolio ul > li > a > .list01 > .btn_link > span::before {
     position: absolute;
     right: 18px;
     top: 6px;
@@ -388,16 +390,16 @@
 .content .chat_container #message02 {
     justify-content: flex-end;
 }
-.content .chat_container #message01 img {
+.content .chat_container #message01 img,
+.content .chat_container #message02 img  {
     border-radius: 100%;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .content .chat_container #message01 span,
 .content .chat_container #message02 span,
 .content .chat_container #message02 a {
     position: relative;
     display: inline-block;
-    max-width: 70%;
+    max-width: 72%;
     padding: 12px;
     border-radius: 20px;
     background-color: #ededed;
@@ -406,11 +408,4 @@
 }
 .content .chat_container #message02 a {
     text-decoration: underline;
-}
-.content .chat_container .message {
-    animation: blink-caret 1s steps(5, start) infinite;
-    visibility: hidden;
-}
-.typing {
-    border-right:2px solid #000 
 }

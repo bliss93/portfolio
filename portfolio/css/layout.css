@@ -2,7 +2,7 @@
     파일명 : layout.css
     작성자 : 윤서하 
     작성일 : 2024.04.01
-    설  명 : header, footer 
+    설  명 : top, btm
 */
 .top {
     height: 76px;
@@ -78,4 +78,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+
 
