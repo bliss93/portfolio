@@ -53,7 +53,8 @@ $(document).ready(function(){
         slidesPerView: 'auto', /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
         spaceBetween: 20, /* 팝업과 팝업 사이 여백 */
         loop: true,
-
+        observer: true,
+        observeParents: true,
         breakpoints: {
             
             1640: {
@@ -68,6 +69,7 @@ $(document).ready(function(){
         nextEl: '.social .next',  /* 다음 버튼의 클래스명 */
         prevEl: '.social .prev',  
         },
+        
 
     });
     
