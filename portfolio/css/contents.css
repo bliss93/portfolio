@@ -5,7 +5,8 @@
 .content {
     margin: 76px 0 0 0;
     height: calc(100vh - 190px);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px) brightness(90%);
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -20,7 +21,7 @@
     color: #11285C;
     font-size: 23px;
     font-weight: 700;
-    background-color: #ededed;
+    background-color: rgba(255, 255, 255, 0.63);
     padding: 20px 0 17px 0;
     margin-bottom: 13px;
     text-align: center;
@@ -51,6 +52,7 @@
     text-align: left;
     padding: 45px 0 0 37px;
     width: 530px;
+    position: relative;
 }
 .content .portfolio ul > li > a > .list01 > strong {
     height: 50px;
@@ -64,6 +66,32 @@
     display: block;
     margin-bottom: 24px;
 }
+.content .portfolio ul > li > a > .list01 > .scroll > span,
+.content .portfolio ul > li > a > .list01 > .scroll > img {
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 23px);
+    display: block;
+}
+.content .portfolio ul > li > a > .list01 > .scroll > span {
+    text-align: center;
+    bottom: 30px;
+}
+.content .portfolio ul > li > a > .list01 > .scroll > img  {
+    left: calc(50% - 10px);
+    bottom: 15px;
+    animation-name:scroll; 
+    animation-duration:3s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear
+}
+
+@keyframes scroll {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(0, 10px) }
+    100% { transform:translate(0, 0) }
+}
+
 .content .portfolio ul > li > a > .list01 > .btn_link > span {
     display: block;
     background-color: #343434;
@@ -92,7 +120,7 @@
 .content .top_logo {
     display: block;
     text-align: center;
-    background-color: #ededed;
+    background-color: rgba(255, 255, 255, 0.65);
     line-height: 38px;
 }
 .content .top_logo img {
@@ -139,6 +167,7 @@
     border: 0;
     outline: 0; 
     margin-left: 7px;
+    background-color: transparent;
 }
 .content .search_group .search input[type="text"]::placeholder {
     font-weight: 400;
@@ -209,12 +238,12 @@
 .content .top_part h2{
     font-size: 24px;
     text-align: center;
-    background-color: #ededed;
+    background-color: rgba(255,255,255,0.8);
     line-height: 62px;
 }
 .content .top_ad {
     display: flex;
-    background-color: #D9D9D9;
+    background-color: rgba(255, 255, 255, 0.4);
     line-height: 104px;
     position: relative;
 }
@@ -266,7 +295,7 @@
 .content .ctf_list li {
     width: 515px;
     height: 78px;
-    background-color: #ECECEC;
+    background-color: rgba(255, 255, 255, 0.6);
     margin: 0 15px 13px 15px;
     border-radius: 20px;
     display: flex;
@@ -297,7 +326,7 @@
     width: 93px;
     height: 93px;
     border-radius: 50%;
-    background-color: #D9D9D9;
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,21 +337,21 @@
     transition: background-color 0.3s;
 }
 .content .ablity_list span:hover {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
 .content .ablity_list span:nth-child(9),
 .content .ablity_list span:nth-child(10),
 .content .ablity_list span:nth-child(11),
 .content .ablity_list span:nth-child(12) {
-    background-color: #11285C;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
 .content .ablity_list span:nth-child(9):hover,
 .content .ablity_list span:nth-child(10):hover,
 .content .ablity_list span:nth-child(11):hover,
 .content .ablity_list span:nth-child(12):hover {
-    background-color: #D9D9D9;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #11285C;
 }
 
@@ -362,7 +391,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: #ededed;
+    background-color: rgba(255, 255, 255, 0.8);
     line-height: 38px;
     padding: 0 32px;
 }
@@ -402,7 +431,7 @@
     max-width: 72%;
     padding: 12px;
     border-radius: 20px;
-    background-color: #ededed;
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 7px; 
     word-wrap: break-word;
 }

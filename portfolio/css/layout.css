@@ -17,13 +17,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px 20px 0 0;
     padding: 31px 31px 25px 51px;
 }
 .top .wrapper.on,
 .top .wrapper[data-menu="on"] {
-    background-color: #ededed;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .top .js-clock {
@@ -36,7 +36,7 @@
     bottom: 0;
     z-index: 1000;
     height: 114px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0 0 20px 20px;
 }
 .btm_menu ul {
@@ -69,14 +69,14 @@
     height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #ededed;
+    background-color:  rgba(255, 255, 255, 0.2);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background-color: #fff;
 }
 
 

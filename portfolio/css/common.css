@@ -29,12 +29,57 @@
 html, body {
     font-family: 'Pretendard', sans-serif; 
     font-size: 17px;
-    background-color: #e5e5e5;
     color: #1d1d1d; 
     font-weight: 400;
     line-height: 1.2; 
     word-break: keep-all; 
     word-wrap: break-word; 
+    height: 100%;
+}
+
+body {
+    background-size: cover;
+    background-position: 50% 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+body.main {
+    background-image: url(../images/common/main_bg.jpg);
+}
+body.photo {
+    background-image: url(../images/common/photo_bg.jpg);
+}
+body.chat {
+    background-image: url(../images/common/chat_bg.jpg);
+}
+body.alert {
+    background-image: url(../images/common/alert_bg.jpg);
+}
+body.more {
+    background-image: url(../images/common/more_bg.jpg);
+}
+
+body .main_move {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    font-size: 120px;
+    color: rgba(255,255,255,0.1);
+    white-space: nowrap; /* 한줄로 */
+    animation:rolling; 
+    animation-duration:20s; /* 1바퀴 돌때 걸리는 시간 */
+    animation-timing-function:linear; /* 균일한 속도 */
+    animation-iteration-count:infinite; /* 무한반복 */
+
+}
+
+@keyframes rolling {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate( -50%, 0) } /* 글자가 움직여서 처음과 동일한 위치가 되는 값 (동일한 문장을 여러번 쓰기 때문에 3-4번째 문장이 다시 시작하는 위치로 하면 됨) */
 }
 
 p, a, h1, h2, h3, h4, h5, h6 {
@@ -51,6 +96,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    z-index: 2;
 }
 
 
