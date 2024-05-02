@@ -1,4 +1,4 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="16" cy="9.3335" rx="4" ry="4" stroke="white" stroke-width="1.5"/>
-<path d="M5.3335 22.6665C5.3335 20.4574 7.12436 18.6665 9.3335 18.6665H22.6668C24.876 18.6665 26.6668 20.4574 26.6668 22.6665V26.6665H5.3335V22.6665Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="5.125" r="4.125" stroke="#1D1D1D" stroke-width="1.5"/>
+<path d="M1 18.75C1 16.5409 2.79086 14.75 5 14.75H19C21.2091 14.75 23 16.5409 23 18.75V23H1V18.75Z" stroke="#1D1D1D" stroke-width="1.5" stroke-linejoin="round"/>
 </svg>

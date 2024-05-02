@@ -27,8 +27,8 @@
 html, body {
     font-family: 'Pretendard', '-apple-system', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 'sans-serif'; /* 서체 serif 명조 sans-serif 고딕 */
     font-size: 17px; /* 크기 */
-    background-color: #000;
-    color: #fff; /* 글자색상 */
+    background-color: #fff;
+    color: #1d1d1d; /* 글자색상 */
     font-weight: 400; /* 글자의 두께 */
     line-height: 1.2; /* auto */
     word-break: keep-all; /* 단어를 묶어서 줄바꿈 */
