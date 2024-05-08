@@ -449,7 +449,7 @@
     margin: 34px 0 11px 0;
     transition: 0.3s;
 }
-.info .inner2 ul li a:hover img {
+.info .inner2 ul li:hover a img {
     transform: translateY(-5px)
 } 
 .info .inner2 ul li a span {
@@ -466,6 +466,7 @@
     width: 1065px;
     height: 463px;
     border-radius: 20px;
+    padding: 59px 41px 59px 41px;
 }
 .news .inner .notice {
     position: relative;
@@ -473,8 +474,8 @@
 }
 .news .inner .notice .more {
     position: absolute;
-    right: 38px;
-    top: 74px;
+    right: 90px;
+    top: 20px;
 }
 .news .inner .home {
     position: relative;
@@ -482,12 +483,40 @@
 }
 .news .inner .home .more {
     position: absolute;
-    right: 0;
+    right: 90px;
+    top: 20px;
+}
+.news .inner .more::after {
+    position: absolute;
+    right: -30px;
     top: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/main/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    content: "";
 }
 .news .inner h2 {
     font-size: 1.765rem;
     font-weight: 700;
+    margin-bottom: 30px;
+}
+.news .inner .notice ul {
+    border-top: 1px solid rgba(93, 93, 93, 0.5);
+    margin-right: 60px;
+    padding-top: 36px;
+}
+.news .inner .home ul {
+    border-top: 1px solid rgba(93, 93, 93, 0.5);
+    margin-right: 60px;
+    padding-top: 36px;
+}
+.news .inner ul li {
+    margin-bottom: 23px;
+}
+.news .inner ul li:last-child {
+    margin-bottom: 59px;
 }
 .news .inner ul li a {
     display: flex;
